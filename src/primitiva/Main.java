@@ -58,64 +58,76 @@ public class Main extends javax.swing.JFrame {
         Btn_Generar = new javax.swing.JButton();
         Btn_Limpiar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         FField_num1.setEditable(false);
         FField_num1.setBackground(new java.awt.Color(153, 255, 153));
         FField_num1.setForeground(new java.awt.Color(0, 0, 0));
         FField_num1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        FField_num1.setText("55");
         FField_num1.setPreferredSize(new java.awt.Dimension(50, 50));
+        FField_num1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FField_num1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(FField_num1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, -1, 52));
 
         FField_num2.setEditable(false);
         FField_num2.setBackground(new java.awt.Color(153, 255, 153));
         FField_num2.setForeground(new java.awt.Color(0, 0, 0));
         FField_num2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        FField_num2.setText("55");
         FField_num2.setPreferredSize(new java.awt.Dimension(50, 50));
+        FField_num2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FField_num2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(FField_num2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, -1, 52));
 
         FField_num3.setEditable(false);
         FField_num3.setBackground(new java.awt.Color(153, 255, 153));
         FField_num3.setForeground(new java.awt.Color(0, 0, 0));
         FField_num3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        FField_num3.setText("55");
         FField_num3.setPreferredSize(new java.awt.Dimension(50, 50));
+        getContentPane().add(FField_num3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, -1, 52));
 
         FField_num4.setEditable(false);
         FField_num4.setBackground(new java.awt.Color(153, 255, 153));
         FField_num4.setForeground(new java.awt.Color(0, 0, 0));
         FField_num4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        FField_num4.setText("55");
         FField_num4.setPreferredSize(new java.awt.Dimension(50, 50));
+        getContentPane().add(FField_num4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, -1, 52));
 
         FField_num5.setEditable(false);
         FField_num5.setBackground(new java.awt.Color(153, 255, 153));
         FField_num5.setForeground(new java.awt.Color(0, 0, 0));
         FField_num5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        FField_num5.setText("55");
         FField_num5.setPreferredSize(new java.awt.Dimension(50, 50));
+        getContentPane().add(FField_num5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 210, -1, 52));
 
         FField_num6.setEditable(false);
         FField_num6.setBackground(new java.awt.Color(153, 255, 153));
         FField_num6.setForeground(new java.awt.Color(0, 0, 0));
         FField_num6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        FField_num6.setText("55");
         FField_num6.setPreferredSize(new java.awt.Dimension(50, 50));
+        getContentPane().add(FField_num6, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 210, -1, 52));
 
         FField_numComp.setEditable(false);
         FField_numComp.setBackground(new java.awt.Color(0, 153, 51));
         FField_numComp.setForeground(new java.awt.Color(0, 0, 0));
         FField_numComp.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        FField_numComp.setText("55");
         FField_numComp.setPreferredSize(new java.awt.Dimension(50, 50));
+        getContentPane().add(FField_numComp, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 210, -1, 52));
 
         FField_numReint.setEditable(false);
         FField_numReint.setBackground(new java.awt.Color(0, 153, 51));
         FField_numReint.setForeground(new java.awt.Color(0, 0, 0));
         FField_numReint.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        FField_numReint.setText("55");
         FField_numReint.setPreferredSize(new java.awt.Dimension(50, 50));
+        getContentPane().add(FField_numReint, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, -1, 52));
 
         Btn_Guardar.setBackground(new java.awt.Color(0, 255, 51));
         Btn_Guardar.setForeground(new java.awt.Color(0, 0, 0));
@@ -129,6 +141,7 @@ public class Main extends javax.swing.JFrame {
                 Btn_GuardarActionPerformed(evt);
             }
         });
+        getContentPane().add(Btn_Guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 420, 110, 31));
 
         Btn_UltSorteo.setBackground(new java.awt.Color(0, 255, 51));
         Btn_UltSorteo.setForeground(new java.awt.Color(0, 0, 0));
@@ -142,6 +155,7 @@ public class Main extends javax.swing.JFrame {
                 Btn_UltSorteoActionPerformed(evt);
             }
         });
+        getContentPane().add(Btn_UltSorteo, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 330, 110, 31));
 
         Btn_Generar.setBackground(new java.awt.Color(0, 255, 51));
         Btn_Generar.setForeground(new java.awt.Color(0, 0, 0));
@@ -155,6 +169,7 @@ public class Main extends javax.swing.JFrame {
                 Btn_GenerarActionPerformed(evt);
             }
         });
+        getContentPane().add(Btn_Generar, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 410, 110, 31));
 
         Btn_Limpiar.setBackground(new java.awt.Color(0, 255, 51));
         Btn_Limpiar.setForeground(new java.awt.Color(0, 0, 0));
@@ -168,70 +183,17 @@ public class Main extends javax.swing.JFrame {
                 Btn_LimpiarActionPerformed(evt);
             }
         });
+        getContentPane().add(Btn_Limpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 420, 110, 31));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/primitiva/Logotipo.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(307, 307, 307)
-                .addComponent(Btn_UltSorteo, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addComponent(Btn_Generar, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(120, 120, 120)
-                .addComponent(Btn_Guardar, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
-                .addComponent(Btn_Limpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(130, 130, 130)
-                .addComponent(FField_num1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(FField_num2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(FField_num3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(FField_num4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(FField_num5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(FField_num6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(FField_numComp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(FField_numReint, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(217, 217, 217)
-                .addComponent(jLabel1))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(jLabel1)
-                .addGap(69, 69, 69)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(FField_num1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(FField_num2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(FField_num3, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(FField_num4, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(FField_num5, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(FField_num6, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(FField_numComp, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(FField_numReint, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(69, 69, 69)
-                .addComponent(Btn_UltSorteo, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(13, 13, 13)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Btn_Generar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Btn_Guardar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Btn_Limpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/primitiva/fondo.jpg"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        jLabel2.setMaximumSize(new java.awt.Dimension(700, 500));
+        jLabel2.setMinimumSize(new java.awt.Dimension(700, 500));
+        jLabel2.setPreferredSize(new java.awt.Dimension(700, 500));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-680, -450, 1380, 950));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -303,6 +265,14 @@ public class Main extends javax.swing.JFrame {
         FField_numReint.setText(" ");
     }//GEN-LAST:event_Btn_LimpiarActionPerformed
 
+    private void FField_num1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FField_num1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FField_num1ActionPerformed
+
+    private void FField_num2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FField_num2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FField_num2ActionPerformed
+
     private void asignarNumeros(){
         FField_num1.setText(numeros_7.get(0));
         FField_num2.setText(numeros_7.get(1));
@@ -370,5 +340,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField FField_numReint;
     private javax.swing.JFileChooser jFileChooser1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
