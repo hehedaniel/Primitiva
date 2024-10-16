@@ -6,7 +6,8 @@ package primitiva;
 
 /**
  *
- * @author alumno
+ * @author José Carlos Pérez González
+ * @author Daniel Martín Hermoso Hermoso
  */
 public class Primitiva {
 
